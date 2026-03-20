@@ -27,6 +27,7 @@ export type DogCharacteristics = {
 
 export type DogAttributes = {
   name: string;
+  url: string;
   breed: string;
   breedType: string;
   image: DogImage;
