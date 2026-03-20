@@ -1,0 +1,67 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": "plt_monstera_01",
+      "name": "Monstera deliciosa",
+      "commonName": "Swiss cheese plant",
+      "type": "tropical vine",
+      "family": "Araceae",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=800&q=80",
+        "alt": "Large Monstera leaves with characteristic fenestrations",
+        "width": 800,
+        "height": 1000
+      },
+      "fact": "The holes and splits in mature leaves (fenestrations) are thought to let wind pass through in the wild, reducing damage during storms in tropical forests.",
+      "nativeRegion": "Southern Mexico to Panama",
+      "care": {
+        "light": "bright indirect",
+        "water": "when top soil dries"
+      }
+    },
+    {
+      "id": "plt_lavender_02",
+      "name": "Lavandula angustifolia",
+      "commonName": "English lavender",
+      "type": "herbaceous perennial",
+      "family": "Lamiaceae",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=800&q=80",
+        "alt": "Purple lavender flowers in a field",
+        "width": 800,
+        "height": 533
+      },
+      "fact": "Lavender’s fragrance comes from essential oils in tiny glands on the flowers, leaves, and stems — bees visit it heavily, which helps nearby fruit crops.",
+      "nativeRegion": "Mediterranean",
+      "care": {
+        "light": "full sun",
+        "water": "drought-tolerant once established"
+      }
+    },
+    {
+      "id": "plt_bamboo_04",
+      "name": "Bambusa vulgaris",
+      "commonName": "Common bamboo",
+      "type": "grass",
+      "family": "Poaceae",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=80",
+        "alt": "Tall green bamboo stalks in a grove",
+        "width": 800,
+        "height": 1200
+      },
+      "fact": "Bamboo is one of the fastest-growing plants on Earth; some species can grow nearly a meter in a single day under ideal conditions.",
+      "nativeRegion": "Southeast Asia",
+      "care": {
+        "light": "full sun to partial shade",
+        "water": "consistent moisture"
+      }
+    }
+  ],
+  "meta": {
+    "total": 4,
+    "page": 1,
+    "pageSize": 4
+  }
+}

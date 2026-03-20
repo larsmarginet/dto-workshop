@@ -1,0 +1,135 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": "dog_border_collie_01",
+      "type": "dog",
+      "attributes": {
+        "name": "Nell",
+        "breed": "Border Collie",
+        "breedType": "herding",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1507146420286-ef7078044007?w=800&q=80",
+          "alt": "Black and white Border Collie outdoors, alert expression",
+          "width": 800,
+          "height": 533
+        },
+        "characteristics": {
+          "size": "medium",
+          "weightKg": { "min": 14, "max": 22 },
+          "heightCm": { "min": 46, "max": 56 },
+          "coat": "double; medium length",
+          "colors": ["black and white", "red and white", "blue merle"],
+          "temperament": ["highly intelligent", "energetic", "work-driven", "responsive to training"],
+          "lifespanYears": { "min": 12, "max": 15 },
+          "exerciseNeeds": "very high",
+          "shedding": "seasonal",
+          "goodWithChildren": true,
+          "goodWithOtherPets": true
+        },
+        "summary": "Bred for stamina and focus on sheep work; needs mental and physical outlets daily."
+      },
+      "relationships": {
+        "breedGroup": {
+          "data": { "type": "breedGroup", "id": "grp_herding" }
+        }
+      }
+    },
+    {
+      "id": "dog_french_bulldog_02",
+      "type": "dog",
+      "attributes": {
+        "name": "Bruno",
+        "breed": "French Bulldog",
+        "breedType": "companion",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=800&q=80",
+          "alt": "French Bulldog sitting on pavement, looking at camera",
+          "width": 800,
+          "height": 1000
+        },
+        "characteristics": {
+          "size": "small",
+          "weightKg": { "min": 8, "max": 14 },
+          "heightCm": { "min": 28, "max": 33 },
+          "coat": "short, smooth",
+          "colors": ["brindle", "fawn", "white", "pied"],
+          "temperament": ["affectionate", "playful", "adaptable", "can be stubborn"],
+          "lifespanYears": { "min": 10, "max": 12 },
+          "exerciseNeeds": "low to moderate",
+          "shedding": "low",
+          "brachycephalic": true,
+          "goodWithChildren": true,
+          "goodWithOtherPets": true
+        },
+        "summary": "Compact companion breed; heat sensitivity and breathing care matter in warm weather."
+      },
+      "relationships": {
+        "breedGroup": {
+          "data": { "type": "breedGroup", "id": "grp_non_sporting" }
+        }
+      }
+    },
+    {
+      "id": "dog_german_shepherd_03",
+      "type": "dog",
+      "attributes": {
+        "name": "Kaya",
+        "breed": "German Shepherd Dog",
+        "breedType": "working",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1589941013453-ec89f33b5e87?w=800&q=80",
+          "alt": "German Shepherd in profile, attentive stance",
+          "width": 800,
+          "height": 533
+        },
+        "characteristics": {
+          "size": "large",
+          "weightKg": { "min": 22, "max": 40 },
+          "heightCm": { "min": 55, "max": 65 },
+          "coat": "double; medium outer coat",
+          "colors": ["black and tan", "sable", "solid black"],
+          "temperament": ["confident", "loyal", "courageous", "aloof with strangers"],
+          "lifespanYears": { "min": 9, "max": 13 },
+          "exerciseNeeds": "high",
+          "shedding": "heavy",
+          "goodWithChildren": true,
+          "goodWithOtherPets": "varies; early socialization helps"
+        },
+        "summary": "Versatile working breed used in service, sport, and family life; thrives with structure and training."
+      },
+      "relationships": {
+        "breedGroup": {
+          "data": { "type": "breedGroup", "id": "grp_herding" }
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "type": "breedGroup",
+      "id": "grp_herding",
+      "attributes": {
+        "name": "Herding",
+        "description": "Breeds developed to control the movement of other animals; often highly trainable and motion-sensitive."
+      }
+    },
+    {
+      "type": "breedGroup",
+      "id": "grp_non_sporting",
+      "attributes": {
+        "name": "Non-sporting",
+        "description": "Diverse companion and utility breeds that do not fit neatly into other sport or work categories."
+      }
+    }
+  ],
+  "meta": {
+    "total": 3,
+    "page": 1,
+    "pageSize": 3,
+    "version": "1.0"
+  },
+  "links": {
+    "self": "/api/dogs?page=1&pageSize=3"
+  }
+}
