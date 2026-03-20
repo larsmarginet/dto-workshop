@@ -1,23 +1,23 @@
-export type DogNumericRange = {
+export type DogNumericRangeDTO = {
   min: number;
   max: number;
 };
 
-export type DogImage = {
+export type DogImageDTO = {
   src: string;
   alt: string;
   width: number;
   height: number;
 };
 
-export type DogCharacteristics = {
+export type DogCharacteristicsDTO = {
   size: string;
-  weightKg: DogNumericRange;
-  heightCm: DogNumericRange;
+  weightKg: DogNumericRangeDTO;
+  heightCm: DogNumericRangeDTO;
   coat: string;
   colors: string[];
   temperament: string[];
-  lifespanYears: DogNumericRange;
+  lifespanYears: DogNumericRangeDTO;
   exerciseNeeds: string;
   shedding: string;
   goodWithChildren: boolean;
@@ -25,27 +25,28 @@ export type DogCharacteristics = {
   brachycephalic?: boolean;
 };
 
-export type DogAttributes = {
+export type DogAttributesDTO = {
+  url: string;
   name: string;
   breed: string;
   breedType: string;
-  image: DogImage;
-  characteristics: DogCharacteristics;
+  image: DogImageDTO;
+  characteristics: DogCharacteristicsDTO;
   summary: string;
 };
 
-export type DogBreedGroupRef = {
+export type DogBreedGroupRefDTO = {
   type: "breedGroup";
   id: string;
 };
 
-export type Dog = {
+export type DogDTO = {
   id: string;
   type: "dog";
-  attributes: DogAttributes;
+  attributes: DogAttributesDTO;
   relationships: {
     breedGroup: {
-      data: DogBreedGroupRef;
+      data: DogBreedGroupRefDTO;
     };
   };
 };
